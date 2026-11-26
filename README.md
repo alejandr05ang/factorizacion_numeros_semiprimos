@@ -13,6 +13,7 @@ El repositorio contiene un análisis estadístico auditable de un pipeline *insp
 | Notebook del experimento | [`ComputacionCuantica.ipynb`](ComputacionCuantica.ipynb) |
 | Dataset de referencia (22.470 filas, 12 columnas) | [`datasets/5.aislar_cuantico_de_parte_clasica/shor_experiment_v2.csv`](datasets/5.aislar_cuantico_de_parte_clasica/shor_experiment_v2.csv) |
 | Diccionario de datos | [`datasets/README.md`](datasets/README.md) |
+| Recálculo de tablas y figuras desde el CSV (reconstrucción) | [`analisis/`](analisis/) |
 
 Todo lo que está en `archive/` es material histórico: **no se usa para ningún resultado del artículo**.
 
@@ -24,6 +25,7 @@ Todo lo que está en `archive/` es material histórico: **no se usa para ningún
 .
 ├── ComputacionCuantica.ipynb      # Notebook del experimento final (se conserva tal como se ejecutó)
 ├── requirements.txt               # Dependencias (versiones reconstruidas, ver Reproducibilidad)
+├── analisis/                      # Reconstrucción de Wilson, Tablas V–VIII y Figuras 1–6 desde el CSV
 ├── datasets/
 │   ├── README.md                  # Diccionario de datos del dataset final
 │   ├── 5.aislar_cuantico_de_parte_clasica/   # Dataset del artículo (CSV + figuras del notebook)
@@ -59,13 +61,13 @@ El notebook se conserva sin modificar, tal como se ejecutó. Algunos textos here
 - **Rango de bits.** El comentario "4 a 17 bits" es erróneo: `range(4, 17)` llega a 16.
 - **Motivos de fallo.** Se calculan en el código (`fail_no_period`, `fail_r_odd`, `fail_trivial_root`) pero no se guardan en el CSV.
 
-## Pendiente
+## Tablas y figuras del artículo
 
-Los intervalos de Wilson, los rangos propagados (Tabla VIII) y las figuras del artículo **no tienen script en este repositorio**. Los valores numéricos se recalcularon desde el CSV y coinciden con el artículo.
+El notebook no calcula los intervalos de Wilson, la Tabla VIII ni las figuras del artículo, y el script original con el que se hicieron no se conserva. [`analisis/`](analisis/) los **reconstruye** desde el CSV y comprueba que coinciden con los valores publicados. Las figuras que el notebook guardó en la carpeta del dataset son otras (ver `datasets/README.md`).
 
 ## Cómo citar
 
-> E. A. Angamarca-Avendaño, J. G. Sáenz-Arias y J. A. Espinoza-Narváez, "Factorización de números semiprimos: Shor-inspired simulation pipeline and dataset", repositorio GitHub, 2026. https://github.com/Alejandr05ang/factorizacion_numeros_semiprimos
+> E. A. Angamarca-Avendaño, J. G. Sáenz-Arias, and J. A. Espinoza-Narváez, "Factorización de números semiprimos: Shor-inspired simulation pipeline and dataset," GitHub repository, 2026. [Online]. Available: https://github.com/alejandr05ang/factorizacion_numeros_semiprimos
 
 ## Licencia
 
