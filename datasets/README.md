@@ -27,3 +27,5 @@ Una fila por *ejecución externa* (hasta 10 intentos internos): 6.531 con `succe
 Los motivos intermedios de rechazo (periodo no recuperable, orden impar, raíz trivial) no se registraron.
 
 **Figuras (`*.png` de esa carpeta).** Son las que generó el notebook en la corrida original (`cumulative_quantum`, `distributions_v2`, `quantum_analysis`, `force_quantum_analysis`, `risk_dashboard_final`, `shots_efficiency`). **No son las figuras del artículo**, y algunas conservan etiquetas heredadas con la palabra "ruido" que no corresponden a esta simulación ideal (ver el README raíz).
+
+**Licencia de los datos:** [CC BY 4.0](LICENSE). Cite a los autores y el repositorio al reutilizarlos.

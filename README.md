@@ -24,6 +24,7 @@ Todo lo que está en `archive/` es material histórico: **no se usa para ningún
 ```
 .
 ├── ComputacionCuantica.ipynb      # Notebook del experimento final (se conserva tal como se ejecutó)
+├── LICENSE                        # MIT (código y documentación)
 ├── requirements.txt               # Dependencias (versiones reconstruidas, ver Reproducibilidad)
 ├── analisis/                      # Reconstrucción de Wilson, Tablas V–VIII y Figuras 1–6 desde el CSV
 ├── datasets/
@@ -71,4 +72,7 @@ El notebook no calcula los intervalos de Wilson, la Tabla VIII ni las figuras de
 
 ## Licencia
 
-Pendiente de definición por los autores.
+- **Código y documentación** (notebooks, `analisis/` y textos): [MIT](LICENSE).
+- **Datos** (carpeta `datasets/`, incluido el CSV de referencia y las figuras que contiene): [CC BY 4.0](datasets/LICENSE). Al reutilizarlos, cite a los autores y este repositorio (sección anterior).
+
+Copyright (c) 2026 Edwin A. Angamarca-Avendaño, Josué G. Sáenz-Arias, Jordy A. Espinoza-Narváez y Omar G. Bravo-Quezada.
