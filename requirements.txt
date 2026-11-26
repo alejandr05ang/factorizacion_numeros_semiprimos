@@ -1,20 +1,19 @@
-# ─── Computación Cuántica ──────────────────────────────────────────────────────
-qiskit>=1.0.0
-qiskit-aer>=0.14.0
-qiskit-ibm-runtime>=0.20.0
+# Dependencias del experimento final (simulación ideal local con Qiskit Aer).
+#
+# AVISO: estas versiones están RECONSTRUIDAS a partir del entorno virtual "venv"
+# archivado en el historial de git (commit b2121766, 2026-01-31), cuyo Python (3.12.8)
+# coincide con los metadatos del notebook. NO son un `pip freeze` registrado durante
+# el experimento: el equipo original ya no está disponible. Son evidencia indirecta.
+#
+# Python 3.12.8
+qiskit==2.3.0
+qiskit-aer==0.17.2
+numpy==2.4.1
+pandas==3.0.0
+scipy==1.17.0
+matplotlib==3.10.8
+tqdm==4.67.1
 
-# ─── Análisis de datos ─────────────────────────────────────────────────────────
-numpy>=1.24.0
-pandas>=2.0.0
-scipy>=1.11.0
-
-# ─── Visualización ─────────────────────────────────────────────────────────────
-matplotlib>=3.7.0
-
-# ─── Jupyter ───────────────────────────────────────────────────────────────────
+# Herramientas para abrir el notebook (versiones no documentadas en el artículo)
 jupyter>=1.0.0
 notebook>=7.0.0
-nbconvert>=7.0.0
-
-# ─── Utilidades ────────────────────────────────────────────────────────────────
-python-dotenv>=1.0.0

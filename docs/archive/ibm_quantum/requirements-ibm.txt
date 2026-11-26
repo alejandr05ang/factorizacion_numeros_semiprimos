@@ -1,0 +1,5 @@
+# Extras solo para el material histórico de IBM Quantum (fuera del alcance del artículo).
+# Se instala además de ../../../requirements.txt
+-r ../../../requirements.txt
+qiskit-ibm-runtime>=0.20.0
+python-dotenv>=1.0.0
